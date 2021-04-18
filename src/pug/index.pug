@@ -1,0 +1,129 @@
+extends layout/layout
+
+block vars
+    - var pageTitle = 'Главная страница'
+    - var pageBodyClass = 'homepage'
+    - var pageHeaderClass = ''
+
+block content
+    .container 
+        .main-page 
+            a(href="#") 
+                p.main-page__title Q-graver
+            p.main-page__main Главная
+    .services 
+        .container 
+            section.section-services 
+                h1.h1 Наши услуги
+                a.a-section(href="#") Выберите нужный раздел
+            .services-inner
+                p.p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo volutpat sollicitudin eu
+                .services-inner-wr
+                    .ringet 
+                        a(href="#").ringet__link
+                            img(src="./assets/imgs/ring.jpg", alt="ring").ringet__link-img
+                        p.ringet__p Гравировка
+                    .ringet 
+                        a(href="#").ringet__link
+                            img(src="./assets/imgs/ring.jpg", alt="ring").ringet__link-img
+                        p.ringet__p Гравировка 
+                    .ringet 
+                        a(href="#").ringet__link
+                            img(src="./assets/imgs/ring.jpg", alt="ring").ringet__link-img
+                        p.ringet__p Гравировка 
+                    .ringet 
+                        a(href="#").ringet__link
+                            img(src="./assets/imgs/ring.jpg", alt="ring").ringet__link-img
+                        p.ringet__p Гравировка 
+                    .ringet 
+                        a(href="#").ringet__link
+                            img(src="./assets/imgs/ring.jpg", alt="ring").ringet__link-img
+                        p.ringet__p Гравировка  
+    .etching
+        .container 
+            section.section-services 
+                h1.h1 Гравировка
+                a.a-section(href="#") Выберите нужный раздел
+            .swiper-wr
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/ringring.jpg", alt="ring").swiper-slide__link-img
+                                p.swiper-slide__p На кольцах
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/bracelet.jpg", alt="bracelet").swiper-slide__link-img
+                                p.swiper-slide__p На браслетах
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/lighter.jpg", alt="lighter").swiper-slide__link-img
+                                p.swiper-slide__p На зажигалках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/cup.jpg", alt="cup").swiper-slide__link-img
+                                p.swiper-slide__p На кружках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/spoon.jpg", alt="spoon").swiper-slide__link-img
+                                p.swiper-slide__p На ложках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/pen.jpg", alt="pen").swiper-slide__link-img
+                                p.swiper-slide__p На ручках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/ringring.jpg", alt="ring").swiper-slide__link-img
+                                p.swiper-slide__p На кольцах
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/bracelet.jpg", alt="bracelet").swiper-slide__link-img
+                                p.swiper-slide__p На браслетах
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/lighter.jpg", alt="lighter").swiper-slide__link-img
+                                p.swiper-slide__p На зажигалках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/cup.jpg", alt="cup").swiper-slide__link-img
+                                p.swiper-slide__p На кружках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/spoon.jpg", alt="spoon").swiper-slide__link-img
+                                p.swiper-slide__p На ложках
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                img(src="./assets/imgs/pen.jpg", alt="pen").swiper-slide__link-img
+                                p.swiper-slide__p На ручках  
+                    .swiper-pagination
+                .swiper-button-prev    
+                .swiper-button-next
+            .book-wrap 
+                .book-inner 
+                    .book-quality
+                        ul.book-quality-list 
+                            li.book-quality-li 
+                                img(src="./assets/imgs/Vector.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Идеальная гравировка на любом материале
+                            li.book-quality-li 
+                                img(src="./assets/imgs/like.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Немецкая точность и швейцарское качество на современном оборудованиии
+                            li.book-quality-li 
+                                img(src="./assets/imgs/touch.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Бережная работа без механического воздействия
+                    .book-button 
+                        .book-showall 
+                            a(href="#").book-showall__link Показать все
+                        .book-button-btn
+                            a(href="#").book-button-btn__link.btn Заказать 
+    .sales 
+        .container 
+            .sales-inner 
+                form.form
+                    .form-sales
+                        h2.form-sales__h2 Скидка 10%
+                        h3.form-sales__h3 на первый заказ
+                    input(type="email" placeholder="E-mail").form__field
+                    .form__button
+                        a(href="#").form__button-btn.btn Промокод
+
