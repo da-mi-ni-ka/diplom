@@ -1,2 +1,242 @@
 // для каждого компонента нужно импортить переменные, чтобы их использовать
 @import "../main/parameters";
+
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.footer {
+    background-image: url(../imgs/footer-bg.jpg);
+    background-size: cover;
+}
+.footer-wrap {
+    border-bottom: 2px solid #E5E5E5;
+    padding: 30px 0;
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.ord-cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 20%;
+    max-width: 20%;
+    &-inner {
+        justify-content: space-between;
+        &__logo {
+            display: inline-block;
+            padding: 20px 0;
+            &-link {
+                text-decoration: none;
+                &-h1 {
+                    font-size: 26px;
+                    color: #FF3446;
+                    border-bottom: 1px solid #FF3446;
+                }
+                &-p {
+                    font-size: 12px;
+                    color: #FF3446;
+                    padding: 0;
+                }
+            }
+            
+        }
+        &__link {
+            padding: 10px 0;
+            &-btn {
+                font-size: 14px;
+                color: #FFFFFF;
+                text-decoration: none;
+                padding: 8px 12px;
+                background: #FF3446;
+            }
+        }
+    }
+}
+.ord-cl-vid {
+    padding: 15px 0;
+    margin-left: -10px;
+}
+.svg-icon {
+    fill: rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    
+   
+}
+
+.footer-lists {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding: 0 20px;
+}
+.footer-form__search {  
+    position: relative;
+    width: 320px;      
+
+    &-field {
+        color: #fff;
+        background:rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        border: 0 solid rgba(255, 255, 255, 0.5);
+        transition: border-color ease 0.3s;
+        outline: none;
+        padding: 15px 45px 15px 15px;
+    }
+    &-field::placeholder {
+        color: #fff;
+        opacity: 1;
+        text-decoration-line: underline;
+        padding-left: 10px;
+    }
+    &-field:focus {
+        border: 2px solid #a5a3a3;
+    }
+    &-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../imgs/search.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0 solid rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    }
+}
+
+.footer-lists-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.footer-lists-inner-frst {
+
+}
+.list-title {
+    text-transform: uppercase;
+}
+.footer-lists-inner-wr {}
+.lst-ttl-line {
+    position: relative;
+    margin-bottom: 10px;
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        border: 1.5px solid #FF3446;
+        background-color: #FF3446;
+    }
+}
+.list__link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 5px 0;
+}
+
+.footer-contacts {
+
+
+}
+.footer-contacts-busket {
+    &__link {
+        display: inline-block;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+
+.footer-contacts {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 20px;
+}
+.footer-contacts-busket {
+    text-align: right;
+}
+.footer-contacts-inner {
+    padding-left: 10px;
+    
+}
+.footer-contacts-wrap {
+    padding-bottom: 5px;
+}
+.footer-contacts-p-bold {
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px 0;
+    
+}
+.footer-contacts-p-adres {
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    padding: 0;
+}
+.footer-contacts-p-time {
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding: 5px 0;
+}
+.footer-contacts-wrap-svg {
+
+}
+.svg-icon-scl-w {
+    width: 30px;
+    height: 30px;
+    fill: #5DED46;
+    margin-right: 10px;
+}
+.svg-icon-scl-t {
+    width: 30px;
+    height: 30px;
+    fill: #3FC2FA;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-end-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+.footer__p {
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 0;
+
+}
+.footer-end-inner-pol {
+    text-align: center;
+}
+
