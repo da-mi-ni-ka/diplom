@@ -293,7 +293,6 @@ block content
                                 a.grid-el__link(href="#")
                                     img.grid-el__img(src=img, alt=title)
                                 .grid-el__title=title
-
                         +grid-el("Гравировка", "./assets/imgs/mat-pic1.jpg")
                         +grid-el("Гравировка", "./assets/imgs/mat-pic2.jpg")
                         +grid-el("Гравировка", "./assets/imgs/mat-pic3.jpg")
@@ -319,8 +318,246 @@ block content
                         .book-showall 
                             a(href="#").book-showall__link Показать все
                         .book-button-btn
-                            a(href="#").book-button-btn__link.btn Заказать 
-
-                
-
-
+                            a(href="#").book-button-btn__link.btn Заказать
+    .mat-nb
+        .container 
+            section.section-services 
+                h1.h1 Табличка по материалам
+                a.a-section(href="#") Выберите нужный раздел
+            .mat-nb-wr
+                .grid-wrap
+                    .grid-container
+                        mixin grid-el(title, img)
+                            .grid-el
+                                a.grid-el__link(href="#")
+                                    img.grid-el__img(src=img, alt=title)
+                                .grid-el__title=title
+                        +grid-el("Из металла", "./assets/imgs/mat-nb-pic1.jpg")
+                        +grid-el("Из оргстекла", "./assets/imgs/mat-nb-pic2.jpg")
+                        +grid-el("Из пластика", "./assets/imgs/mat-nb-pic3.jpg")
+                        +grid-el("Из дерева", "./assets/imgs/mat-nb-pic4.jpg")
+                .mat-nb-wr-text
+                    h2.mat-nb-wr-text-h2 мы поможем сделать любую вещь 
+                        span.mat-nb-wr-text-h2-clr особенной
+                    p.mat-nb-wr-text-p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo volutpat sollicitudin eu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo volutpat sollicitudin eu Lorem ipsum dolor sit amet, consectetur 
+            .book-wrap 
+                .book-inner
+                    .book-quality
+                        ul.book-quality-list 
+                            li.book-quality-li 
+                                img(src="./assets/imgs/Vector.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Идеальная гравировка на любом материале
+                            li.book-quality-li 
+                                img(src="./assets/imgs/like.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Немецкая точность и швейцарское качество на современном оборудованиии
+                            li.book-quality-li 
+                                img(src="./assets/imgs/touch.svg", alt="vector").book-quality-li__img
+                                p.book-quality-li__p Бережная работа без механического воздействия
+                    .book-button 
+                        .book-showall 
+                            a(href="#").book-showall__link Показать все
+                        .book-button-btn
+                            a(href="#").book-button-btn__link.btn Заказать    
+    .etching-list
+        .container 
+            section.section-services 
+                h1.h1 Гравировка
+                a.a-section(href="#") Выберите нужный раздел
+            .etching-list-wrap 
+                ul.list-wr
+                    li.list-wr-li-title  
+                        a(href="#").list-wr-link-title Гравировка на металле
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на кольцах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на часах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на ножах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на жетонах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на адреснике
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на ручках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на зажигалках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на кружках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на флягах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на ложках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на браслетах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на телефонах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на флешках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на кубках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на медалях
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на самоварах
+                ul.list-wr
+                    li.list-wr-li-title
+                        a(href="#").list-wr-link-title Гравировка на стекле 
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на бокалах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на бутылках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на вазах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на наградах
+                ul.list-wr
+                    li.list-wr-li-title
+                        a(href="#").list-wr-link-title Гравировка на коже 
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на ежедневниках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на портмоне
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на ремне
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на браслетах
+                ul.list-wr
+                    li.list-wr-li-title
+                        a(href="#").list-wr-link-title Гравировка на дереве 
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на часах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на гитарах
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на барабанных палочках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на шкатулках
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на хэштегах
+                ul.list-wr 
+                    li.list-wr-li-title
+                        a(href="#").list-wr-link-title Гравировка на клавиатуре  
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на стационарной клавиатуре
+                    li.list-wr-li
+                        a(href="#").list-wr-link Гравировка на клавиатуре ноутбука:
+                    li.list-wr-li
+                        a(href="#").list-wr-link Macbook
+                    li.list-wr-li
+                        a(href="#").list-wr-link Macbook Pro
+                    li.list-wr-li
+                        a(href="#").list-wr-link Macbook Air
+                    li.list-wr-li
+                        a(href="#").list-wr-link Xiaomi
+                    li.list-wr-li
+                        a(href="#").list-wr-link Chuwi
+                    li.list-wr-li
+                        a(href="#").list-wr-link Lenovo
+                    li.list-wr-li
+                        a(href="#").list-wr-link Deli
+                    li.list-wr-li
+                        a(href="#").list-wr-link HP
+    .works
+        .container 
+            section.section-services 
+                h1.h1 Наши работы
+                a.a-section(href="#") Примеры работ
+            .works-inner 
+                .works-wr 
+                    .works-wr-pic 
+                        a(href="#").works-wr-pic__link
+                            img(src="./assets/imgs/w-pic.jpg", alt="w-pic").works-wr-pic__img
+                    .works-wr-in 
+                        p.works-wr-in-h2 мы поможем сделать любую вещь 
+                            span.works-wr-in-h2-clr особенной
+                        p.works-wr-in__p Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel 
+                        .works-wr-in-pics 
+                            a(href="#").works-wr-in-pics-link
+                                img(src="./assets/imgs/ring2.jpg", alt="ring2").works-wr-in-pics-img
+                            a(href="#").works-wr-in-pics-link
+                                img(src="./assets/imgs/lighter2.jpg", alt="ring2").works-wr-in-pics-img
+                            a(href="#").works-wr-in-pics-link
+                                img(src="./assets/imgs/pen2.jpg", alt="ring2").works-wr-in-pics-img
+                .swiper-wr-works 
+                    .swiper-container-works 
+                        .swiper-wrapper-works 
+                            .swiper-slide-works
+                                a(href="#").swiper-slide-works__link 
+                                    img(src="./assets/imgs/ring2.jpg", alt="ring").swiper-slide-works__link-img
+                                    p.swiper-slide-works__p На обручальных кольцах
+                            .swiper-slide-works
+                                a(href="#").swiper-slide-works__link 
+                                    img(src="./assets/imgs/ring2.jpg", alt="ring").swiper-slide-works__link-img
+                                    p.swiper-slide-works__p На обручальных кольцах
+                            .swiper-slide-works
+                                a(href="#").swiper-slide-works__link 
+                                    img(src="./assets/imgs/lighter2.jpg", alt="lighter").swiper-slide-works__link-img
+                                    p.swiper-slide-works__p На зажигалках
+                            .swiper-slide-works
+                                a(href="#").swiper-slide-works__link 
+                                    img(src="./assets/imgs/pen2.jpg", alt="pen").swiper-slide-works__link-img
+                                    p.swiper-slide-works__p На ручках
+                    .swiper-button-prev.btn-works-l
+                    .swiper-button-next.btn-works-r
+            .book-wrap 
+                .book-inner-works
+                    .book-showall-works
+                        a(href="#").book-showall-works__link Показать все
+    .trust 
+        .container 
+            section.section-services 
+                h1.h1 Нам доверяют
+                a.a-section(href="#") Клиенты, с которыми мы работаем
+            .swiper-wr.trust-swiper-wr
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-img
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-img
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/veeam.svg", alt="eucerin").swiper-slide-img
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/eucerin.svg", alt="veeam").swiper-slide-img
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-img
+                        .swiper-slide
+                            a(href="#").swiper-slide__link
+                                .swiper-slide
+                                    img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-img
+                    .swiper-pagination
+                .swiper-button-prev    
+                .swiper-button-next
+    .thanks 
+        .container 
+            section.section-services 
+                h1.h1 Благодарные письма
+                a.a-section(href="#") Клиенты, с которыми мы работаем
+            .swiper-wr-thanks
+                .swiper-container-thanks 
+                    .swiper-wrapper-thanks 
+                        .swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link 
+                                .swiper-slide-thanks-wr
+                                    img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-thanks__link-img
+                        .swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link 
+                                .swiper-slide-thanks-wr
+                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-thanks__link-img
+                        .swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link 
+                                .swiper-slide-thanks-wr
+                                    img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-thanks__link-img                  
+                    .swiper-pagination
+                .swiper-button-prev    
+                .swiper-button-next
