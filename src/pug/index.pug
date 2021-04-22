@@ -47,7 +47,7 @@ block content
             .services-inner
                 p.p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo volutpat sollicitudin eu 
             .swiper-wr
-                .swiper-container
+                .swiper-container.swiper-container-etching
                     .swiper-wrapper
                         .swiper-slide
                             a(href="#").swiper-slide__link
@@ -97,9 +97,9 @@ block content
                             a(href="#").swiper-slide__link
                                 img(src="./assets/imgs/pen.jpg", alt="pen").swiper-slide__link-img
                                 p.swiper-slide__p На ручках  
-                    .swiper-pagination
-                .swiper-button-prev    
-                .swiper-button-next
+                    .swiper-pagination.swiper-pagination-etching
+                .swiper-button-prev.swiper-button-prev-etching    
+                .swiper-button-next.swiper-button-next-etching
             .book-wrap 
                 .book-inner 
                     .book-quality
@@ -136,7 +136,7 @@ block content
             .services-inner
                     p.p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo volutpat sollicitudin eu 
             .swiper-wr
-                .swiper-container
+                .swiper-container.swiper-container-etching
                     .swiper-wrapper
                         .swiper-slide
                             a(href="#").swiper-slide__link
@@ -162,9 +162,9 @@ block content
                             a(href="#").swiper-slide__link
                                 img(src="./assets/imgs/cross.jpg", alt="cross").swiper-slide__link-img
                                 p.swiper-slide__p На крест
-                    .swiper-pagination
-                .swiper-button-prev    
-                .swiper-button-next
+                    .swiper-pagination.swiper-pagination-etching
+                .swiper-button-prev.swiper-button-prev-etching    
+                .swiper-button-next.swiper-button-next-etching
             .book-wrap 
                 .book-inner 
                     .book-quality
@@ -210,7 +210,7 @@ block content
                     a(href="#").goods-link 
                         p.goods-link-p Читать далее  
             .swiper-wr.swiper-wr-goods
-                .swiper-container
+                .swiper-container.swiper-container-etching
                     .swiper-wrapper
                         .swiper-slide
                             a(href="#").swiper-slide__link
@@ -227,6 +227,7 @@ block content
                                 .goods-swiper-slide
                                     img(src="./assets/imgs/g-pen.jpg", alt="pen").goods-swiper-slide-img
                                 p.swiper-slide__p.goods-swiper-slide-p ручки
+                                .share Акция
                         .swiper-slide
                             a(href="#").swiper-slide__link
                                 .goods-swiper-slide
@@ -242,9 +243,10 @@ block content
                                 .goods-swiper-slide
                                     img(src="./assets/imgs/g-dairy.jpg", alt="dairy").goods-swiper-slide-img
                                 p.swiper-slide__p.goods-swiper-slide-p ежедневники
-                    .swiper-pagination
-                .swiper-button-prev    
-                .swiper-button-next
+                                .share Акция
+                    .swiper-pagination.swiper-pagination-etching
+                .swiper-button-prev.swiper-button-prev-etching    
+                .swiper-button-next.swiper-button-next-etching
             .book-wrap 
                 .book-inner 
                     .book-quality
@@ -273,12 +275,33 @@ block content
                     input(type="tel" placeholder="Ваш номер телефона").form__field.form__field-g
                     .form__button
                         a(href="#").form__button-btn.btn Позвоните мне
-    
-    //- Video
-    //- 
-    //- 
-    //- 
-    //- Comments
+    .video
+        .container 
+            section.section-services 
+                h1.h1 Видео
+                a.a-section(href="#") посмотрите, как мы работаем
+            .video-wrap 
+                .video-block 
+                    img(src="./assets/imgs/video1.jpg", alt="video").video-block-img
+                    img(src="./assets/imgs/play.svg", alt="play").video-block-img-pl
+                .video-inner 
+                    .video-inner-text
+                        h2.video-inner-text-h2 мы поможем сделать любую вещь 
+                            span.video-inner-text-h2-clr особенной
+                    .video-inner-vd 
+    .comments
+        .container 
+            section.section-services 
+                h1.h1 Отзывы
+                a.a-section(href="#") что такое гравировка
+
+            
+
+            .book-button 
+                .book-showall 
+                    a(href="#").book-showall__link Показать все
+
+
 
     .mat-egnr
         .container 
@@ -509,7 +532,7 @@ block content
                 h1.h1 Нам доверяют
                 a.a-section(href="#") Клиенты, с которыми мы работаем
             .swiper-wr.trust-swiper-wr
-                .swiper-container
+                .swiper-container.swiper-container-etching
                     .swiper-wrapper
                         .swiper-slide
                             a(href="#").swiper-slide__link
@@ -535,29 +558,80 @@ block content
                             a(href="#").swiper-slide__link
                                 .swiper-slide
                                     img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-img
-                    .swiper-pagination
-                .swiper-button-prev    
-                .swiper-button-next
+                    .swiper-pagination.swiper-pagination-etching
+                .swiper-button-prev.swiper-button-prev-etching    
+                .swiper-button-next.swiper-button-next-etching
     .thanks 
         .container 
             section.section-services 
                 h1.h1 Благодарные письма
                 a.a-section(href="#") Клиенты, с которыми мы работаем
             .swiper-wr-thanks
-                .swiper-container-thanks 
-                    .swiper-wrapper-thanks 
-                        .swiper-slide-thanks
+                .swiper-container-thanks.swiper-container
+                    .swiper-wrapper-thanks.swiper-wrapper 
+                        .swiper-slide-thanks.swiper-slide
                             a(href="#").swiper-slide-thanks__link 
                                 .swiper-slide-thanks-wr
                                     img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-thanks__link-img
-                        .swiper-slide-thanks
+                        .swiper-slide-thanks.swiper-slide
                             a(href="#").swiper-slide-thanks__link 
                                 .swiper-slide-thanks-wr
                                     img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-thanks__link-img
-                        .swiper-slide-thanks
+                        .swiper-slide-thanks.swiper-slide
                             a(href="#").swiper-slide-thanks__link 
                                 .swiper-slide-thanks-wr
                                     img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-thanks__link-img                  
-                    .swiper-pagination
-                .swiper-button-prev    
-                .swiper-button-next
+                    .swiper-pagination.swiper-pagination-thanks
+                .swiper-button-prev.swiper-button-prev-thanks   
+                .swiper-button-next.swiper-button-next-thanks
+    .las-engr
+        .container 
+            section.section-services 
+                h1.h1 Лазерная гравировка
+                a.a-section(href="#") Что такое Гравировка
+            .las-engr-inner 
+                .las-engr-pic 
+                    img(src="./assets/imgs/las-engr1.jpg", alt="las-engr").las-engr-pic__img
+                .las-engr-text 
+                    p.las-engr-text__p Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой материал. Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно соответствующее задумке автора.
+                    p.las-engr-text__p Гравировка в Москве - где заказать. Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется компьютером. Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину выреза, которую можно контролировать по желанию заказчика.
+                    p.las-engr-text__p Вы можете сделать гравировку буквально на любом предмете, который попадётся вам на глаза. От гравировки клавиатуры до таблички на дверь, результат будет безупречным и на 100% соответствовать ожиданиям.
+                    p.las-engr-text__p Наши специалисты и качественное оборудование позволяют не только создавать изящные узоры на предметах. При необходимости вы можете имитировать даже рукописный текст, вплоть до разного уровня нажима, которого мы добиваемся, используя специальные программы для гравировки разного уровня и глубины.
+                    p.las-engr-text__p Среди наших услуг - гравировка на металле, гравировка на стекле, украшение мебели и предметов обихода, вообще все работы связанные с нанесением узора на разные вещи. Неважно, из чего выполнена вещь, мы гарантируем отличный результат работ. Даже если у вас уже был неудачный опыт гравировки, в ряде случаев мы можем исправить чужой брак, отполировав поверхность и нанеся новый рисунок.
+    .las-engr-hiw
+        .container 
+            section.section-services 
+                h1.h1 Как это работает
+                a.a-section(href="#") Что такое Гравировка
+            .las-engr-hiw-inner 
+                .las-engr-hiw-pic 
+                    img(src="./assets/imgs/las-engr2.jpg", alt="las-engr").las-engr-hiw-pic__img
+                .las-engr-text 
+                    p.las-engr-text__p С помощью лазера снимается верхний слой материала, при этом есть возможность делать узоры разной глубины. Все зависит от свойств конкретного выбранного материала.
+                    p.las-engr-text__p У лазерной гравировки есть ряд преимуществ по сравнению с другими методами обработки. Вот только некоторые из них:
+                    p.las-engr-text__p 
+                        span.text-dec1 Высокая скорость работ
+                        span , что комфортно и к тому же снижает итоговую стоимость обработки.
+                    p.las-engr-text__p 
+                        span.text-dec2 Никакого физического воздействия
+                        span , благодаря чему можно обрабатывать даже очень хрупкие материалы.
+                    p.las-engr-text__p 
+                        span.text-dec2 Исключены ошибки и брак 
+                        span благодаря полностью автоматизированным процессам.
+                    p.las-engr-text__p Итоговое изображение устойчиво к истиранию даже при активном использовании вещи.
+                    p.las-engr-text__p В основном гравировка делится на промышленную и сувенирную. Каждый вид имеет свои особенности в технике нанесения. Так, сувенирная гравировка обычно используется для того, чтобы украсить личные вещи или сделать оригинальный подарок.
+                    p.las-engr-text__p Промышленная же гравировка преследует другие цели, с её помощью проводят маркировку, оформляют приборный панели, делают номерные знаки и т.д. Разумеется, при оптовых заказах стоимость работ снижается и становится ещё более выгодной для заказчика.
+    .las-engr
+        .container 
+            section.section-services 
+                h1.h1 Где используется гравировка
+                a.a-section(href="#") Что такое Гравировка
+            .las-engr-inner 
+                .las-engr-pic 
+                    img(src="./assets/imgs/las-engr3.jpg", alt="las-engr").las-engr-pic__img
+                .las-engr-text 
+                    p.las-engr-text__p Любой предмет, который вы хотели бы украсить гравировкой, может быть обработан.
+                    p.las-engr-text__p Например, один из распространённых методов - это гравировка по дереву. Это номерки для гардероба, таблички, украшенная мебель, двери и т.д. Вообще древесина один из самых интересных материалов для гравировки, ведь итоговый результат во многом зависит от породы дерева, его оттенка и структуры.
+                    p.las-engr-text__p Металлические объекты чаще всего украшают личными надписями и пожеланиями. Это признание в любви на обручальных кольцах, именная гравировка на фляжке, украшение металлических предметов интерьера, столовых приборов и т.д.
+                    p.las-engr-text__p И, разумеется, гравировкой украшают стекло. От бокалов, которые дарят на свадьбу до украшения стеклянных поверхностей столов или корпусной мебели - гравировка к вашим услугам.
+

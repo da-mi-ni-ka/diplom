@@ -16,9 +16,9 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 .container {
-    width: 100%;
-    max-width: 1170px;
+    width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .main-page {
@@ -425,6 +425,16 @@ p {
         color: #454545;
     }
 }
+.share {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background: #F64E60;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: #fff;
+
+}
 .form-g {
     padding: 0 10px;
 }
@@ -433,11 +443,61 @@ p {
 }
 
 
-// Video
-// 
-// 
-// 
-// Comments
+.video {
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+}
+.video-block{
+    position: relative;
+    &-img {
+        width: 100%;
+        max-width: 100%;
+        &-pl {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.video-inner {
+    &-text {
+        padding: 20px 40px;
+        &-h2 {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #454545;
+            padding-bottom: 10px;
+            position: relative;
+            &-clr {
+                color: #FF3446;
+                font-size: 30px;
+                line-height: 100%;
+                text-transform: uppercase;
+            }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #FF3446;
+        }
+        }
+    }
+}
+
+.comments {
+    background-image: url(../imgs/etching-bg.jpg);
+    background-size: cover;
+}
 
 
 
@@ -808,3 +868,56 @@ p {
     }
 }
 
+
+.las-engr {
+    &-inner {
+        padding: 20px 40px 30px;
+    }
+    &-pic {
+        width: 560px;
+        float: left;
+        padding: 30px 30px 10px 0;
+        &__img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &-text {
+        &__p {
+            font-size: 16px;
+            line-height: 145%;
+            color: #454545;
+        } 
+    }
+}
+
+.las-engr-hiw {
+    &-inner {
+        padding: 20px 40px 30px;
+    }
+    &-pic {
+        width: 560px;
+        float: right;
+        padding: 30px 0 10px 30px;
+        &__img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &-text {
+        &__p {
+            font-size: 16px;
+            line-height: 145%;
+            color: #454545;
+        } 
+    }
+}
+.text-dec1 {
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: #FF3446;
+}
+.text-dec2 {
+    font-weight: 600;
+    color: #454545;
+}
