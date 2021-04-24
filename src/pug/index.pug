@@ -210,7 +210,7 @@ block content
                     a(href="#").goods-link 
                         p.goods-link-p Читать далее  
             .swiper-wr.swiper-wr-goods
-                .swiper-container.swiper-container-etching
+                .swiper-container.swiper-container-goods
                     .swiper-wrapper
                         .swiper-slide
                             a(href="#").swiper-slide__link
@@ -288,21 +288,62 @@ block content
                     .video-inner-text
                         h2.video-inner-text-h2 мы поможем сделать любую вещь 
                             span.video-inner-text-h2-clr особенной
-                    .video-inner-vd 
+                    .video-inner-vd
+                        .swiper-wr.swiper-wr-video
+                            .swiper-container.swiper-container-video
+                                .swiper-wrapper
+                                    .swiper-slide.swiper-slide-video
+                                        a(href="#").swiper-slide-video__link
+                                            img(src="./assets/imgs/video2.jpg", alt="video").swiper-slide-video__link-img
+                                            img(src="./assets/imgs/play.svg", alt="play").swiper-slide-video__link-img2
+                                    .swiper-slide.swiper-slide-video
+                                        a(href="#").swiper-slide-video__link
+                                            img(src="./assets/imgs/video3.jpg", alt="video").swiper-slide-video__link-img
+                                            img(src="./assets/imgs/play.svg", alt="play").swiper-slide-video__link-img2
+                            .swiper-button-prev.swiper-button-prev-video    
+                            .swiper-button-next.swiper-button-next-video
     .comments
         .container 
             section.section-services 
                 h1.h1 Отзывы
                 a.a-section(href="#") что такое гравировка
-
-            
-
-            .book-button 
-                .book-showall 
-                    a(href="#").book-showall__link Показать все
-
-
-
+            .swiper-wr.swiper-wr-comments
+                .swiper-container.swiper-container-comments
+                    .swiper-wrapper
+                        .swiper-slide
+                            .s-s-inner 
+                                .s-s-inner__img 
+                                    img(src="./assets/imgs/person1.png", alt="person").s-s-inner__img-wr
+                                .s-s-inner-text 
+                                    p.s-s-inner-text-p1 Иван Г.
+                                    p.s-s-inner-text-p2 Отлично, всё сделали. Предупредили, что гравированные буквы не будут просвечиваться, так как пластик на клавишах, на моей клавиатуре толстый... 
+                                    a(href="#").s-s-inner-text-link Читать далее
+                                    p.s-s-inner-text-p2 23.11.2020
+                        .swiper-slide
+                            .s-s-inner 
+                                .s-s-inner__img 
+                                    img(src="./assets/imgs/person1.png", alt="person").s-s-inner__img-wr
+                                .s-s-inner-text 
+                                    p.s-s-inner-text-p1 Сергей С.
+                                    p.s-s-inner-text-p2 Пришел по совету друга. Всем понравилась. Мастер пунктуальный. Все объяснил и помог определится с выбором. Советую всем. Цены по-моему самые адекватные.
+                                    p.s-s-inner-text-p2 23.11.2020
+                        .swiper-slide
+                            .s-s-inner 
+                                .s-s-inner__img 
+                                    img(src="./assets/imgs/person2.png", alt="person").s-s-inner__img-wr
+                                .s-s-inner-text 
+                                    p.s-s-inner-text-p1 Александра М. 
+                                    p.s-s-inner-text-p2 Очень понравилось как сделали гравировку, быстро и качественно! Я очень переживала, так как ручка очень дорогая и боялась, что ее просто...
+                                    a(href="#").s-s-inner-text-link Читать далее
+                                    p.s-s-inner-text-p2 23.11.2020
+                    .swiper-pagination.swiper-pagination-comments
+                .swiper-button-prev.swiper-button-prev-comments    
+                .swiper-button-next.swiper-button-next-comments
+            .book-wrap 
+                .book-inner-comments
+                    .book-button-comments
+                        .book-showall-comments
+                            a(href="#").book-showall__link Оставить отзыв   
     .mat-egnr
         .container 
             section.section-services 
@@ -502,8 +543,8 @@ block content
                             a(href="#").works-wr-in-pics-link
                                 img(src="./assets/imgs/pen2.jpg", alt="ring2").works-wr-in-pics-img
                 .swiper-wr-works 
-                    .swiper-container-works 
-                        .swiper-wrapper-works 
+                    .swiper-container.swiper-container-works 
+                        .swiper-wrapper.swiper-wrapper-works 
                             .swiper-slide-works
                                 a(href="#").swiper-slide-works__link 
                                     img(src="./assets/imgs/ring2.jpg", alt="ring").swiper-slide-works__link-img
@@ -531,56 +572,56 @@ block content
             section.section-services 
                 h1.h1 Нам доверяют
                 a.a-section(href="#") Клиенты, с которыми мы работаем
-            .swiper-wr.trust-swiper-wr
-                .swiper-container.swiper-container-etching
-                    .swiper-wrapper
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-img
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-img
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/veeam.svg", alt="eucerin").swiper-slide-img
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/eucerin.svg", alt="veeam").swiper-slide-img
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-img
-                        .swiper-slide
-                            a(href="#").swiper-slide__link
-                                .swiper-slide
-                                    img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-img
-                    .swiper-pagination.swiper-pagination-etching
-                .swiper-button-prev.swiper-button-prev-etching    
-                .swiper-button-next.swiper-button-next-etching
+            .swiper-wr.swiper-wr-trust
+                .swiper-container.swiper-container-trust
+                    .swiper-wrapper.swiper-wrapper-trust
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner2
+                                img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-trust-inner2-img
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner
+                                img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-trust-inner-img
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner
+                                img(src="./assets/imgs/veeam.svg", alt="eucerin").swiper-slide-trust-inner-img
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner2
+                                img(src="./assets/imgs/eucerin.svg", alt="veeam").swiper-slide-trust-inner2-img
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner
+                                img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-trust-inner-img
+                        .swiper-slide.swiper-slide-trust
+                            a(href="#").swiper-slide-trust__link
+                            .swiper-slide-trust-inner
+                                img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-trust-inner-img
+                    .swiper-pagination.swiper-pagination-trust
+                .swiper-button-prev.swiper-button-prev-trust    
+                .swiper-button-next.swiper-button-next-trust
     .thanks 
         .container 
             section.section-services 
                 h1.h1 Благодарные письма
                 a.a-section(href="#") Клиенты, с которыми мы работаем
-            .swiper-wr-thanks
-                .swiper-container-thanks.swiper-container
-                    .swiper-wrapper-thanks.swiper-wrapper 
-                        .swiper-slide-thanks.swiper-slide
-                            a(href="#").swiper-slide-thanks__link 
-                                .swiper-slide-thanks-wr
-                                    img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-thanks__link-img
-                        .swiper-slide-thanks.swiper-slide
-                            a(href="#").swiper-slide-thanks__link 
-                                .swiper-slide-thanks-wr
-                                    img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-thanks__link-img
-                        .swiper-slide-thanks.swiper-slide
-                            a(href="#").swiper-slide-thanks__link 
-                                .swiper-slide-thanks-wr
-                                    img(src="./assets/imgs/veeam.svg", alt="veeam").swiper-slide-thanks__link-img                  
+            .swiper-wr.swiper-wr-thanks
+                .swiper-container.swiper-container-thanks
+                    .swiper-wrapper.swiper-wrapper-thanks
+                        .swiper-slide.swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link
+                            .swiper-slide-thanks-inner2
+                                img(src="./assets/imgs/eucerin.svg", alt="eucerin").swiper-slide-thanks-inner2-img
+                        .swiper-slide.swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link
+                            .swiper-slide-thanks-inner
+                                img(src="./assets/imgs/microsoft.svg", alt="microsoft").swiper-slide-thanks-inner-img
+                        .swiper-slide.swiper-slide-thanks
+                            a(href="#").swiper-slide-thanks__link
+                            .swiper-slide-thanks-inner
+                                img(src="./assets/imgs/veeam.svg", alt="eucerin").swiper-slide-thanks-inner-img                  
                     .swiper-pagination.swiper-pagination-thanks
                 .swiper-button-prev.swiper-button-prev-thanks   
                 .swiper-button-next.swiper-button-next-thanks

@@ -101,6 +101,10 @@ html {
         transform: translateX(-50%);
 
     }
+    &.active,
+    &:hover {
+        color: #FF3446;
+    }
 }
 p {
     font-size: 16px;
@@ -115,6 +119,7 @@ p {
 .section-services {
    text-align: center;  
    border-bottom: 3px solid #CDCED6; 
+   padding: 20px 0 0;
    
 }
 
@@ -191,6 +196,7 @@ p {
         font-weight: 600;
         color: #FFFFFF;
         padding-bottom: 10px;
+    
     }
 }
 .swiper-pagination {
@@ -425,6 +431,7 @@ p {
         color: #454545;
     }
 }
+
 .share {
     position: absolute;
     top: 10px;
@@ -444,17 +451,22 @@ p {
 
 
 .video {
+    padding: 30px 0 0;
     &-wrap {
         display: flex;
         justify-content: space-between;
-        padding: 30px 0;
+        padding: 60px 0;
     }
 }
 .video-block{
     position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px 30px 0 0;
     &-img {
         width: 100%;
         max-width: 100%;
+        border-radius: 10px;
         &-pl {
             position: absolute;
             top: 50%;
@@ -465,8 +477,13 @@ p {
 }
 
 .video-inner {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &-text {
-        padding: 20px 40px;
+        padding: 30px 40px;
         &-h2 {
             font-weight: 500;
             font-size: 30px;
@@ -494,11 +511,110 @@ p {
     }
 }
 
+.swiper-wr-video {
+    position: relative;
+    max-width: 580px;
+    margin: 0 auto;
+}
+.swiper-container-video {
+    padding: 0;
+} 
+.swiper-wrapper {}
+.swiper-slide-video {
+    &__link {
+        display: block;
+        position: relative;
+        &-img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            border-radius: 10px;
+            }
+        &-img2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 25px;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.swiper-button-prev-video {
+    left: -10px;
+    color: #FF3446;
+}
+.swiper-button-next-video {
+    right: -10px;
+    color: #FF3446;
+}
+
+
+
+
+
 .comments {
     background-image: url(../imgs/etching-bg.jpg);
     background-size: cover;
 }
+.swiper-wr-comments {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+.swiper-container-comments {
+    padding: 0 0 20px;
+} 
+.s-s-inner {
+    display: flex;
+    &__img {
+        flex: 0 0 20%;
+        max-width: 20%;
+        &-wr {}
+    }
+    &-text {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 0 10px;
+        &-p1 {
+            padding: 0 0 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            color: #454545;
+        }
+        &-p2 {
+            padding: 10px 0;
+            font-size: 16px;
+            line-height: 130%;
+            color: #454545;
+        }
+        &-p3 {
+            padding: 0;
+        }
+        &-link {
+            font-size: 16px;
+            line-height: 100%;
+            color: #FF3446;
+        }
 
+    }
+}
+.swiper-button-prev-comments {
+    left: -30px;
+    color: #FF3446;
+}
+.swiper-button-next-comments {
+    right: -30px;
+    color: #FF3446;
+}
+.book-inner-comments {
+    display: inline;
+}
+.book-button-comments {
+    text-align: right;
+    padding: 20px 100px 0 0;
+}
 
 
 .mat-egnr {
@@ -610,7 +726,8 @@ p {
                 &-clr {
                     color: #FF3446;
                     font-size: 30px;
-                    line-height: 100%;
+                    line-height: 130%;
+                    font-weight: 600;
                     text-transform: uppercase;
                 }
                 
@@ -672,7 +789,6 @@ p {
             border-right: 2px solid #FF3446;
             transform: rotate(135deg);
         }
-        
     }
     &-link {
         display: inline-block;
@@ -682,7 +798,10 @@ p {
         text-decoration: none;
         position: relative;
         padding-left: 20px;
-
+    &.active,
+    &:hover {
+        color: #FF3446;
+    }
         &::before {
             position: absolute;
             content: "\2022";
@@ -745,9 +864,11 @@ p {
         &-pics {
             display: flex;
             justify-content: space-between;
-            padding: 20px 0 0;
+            padding: 30px 0 0;
 
             &-link {
+                flex: 0 0 32%;
+                max-width: 32%;
                 max-width: 171px;
             }
             &-img {
@@ -827,9 +948,42 @@ p {
     }
 }
 
-.trust-swiper-wr {
-    padding-top: 20px;
+.swiper-wr-trust {
+    padding: 10px 0;
+    max-width: 1000px;
 }
+.swiper-slide-trust {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    min-height: 160px;
+    position: relative;
+    &__link {
+    }
+    &-inner {
+        position: absolute;
+        top: 55px;
+        left: 35px;
+        &-img {}
+    }
+    &-inner2 {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        &-img {}
+    }
+}
+.swiper-button-prev-trust {
+    left: -40px;
+    color: #FF3446;
+}
+.swiper-button-next-trust {
+    right: -40px;
+    color: #FF3446;
+}
+
+
 
 .thanks {
     background-image: url(../imgs/etching-bg.jpg);
@@ -837,35 +991,38 @@ p {
 }
 
 .swiper-wr-thanks {
-    position: relative;
-    margin: 0 auto;
-    padding: 30px 60px 0;
-}
-.swiper-container-thanks {
-    padding: 20px 0;
-    width: 1020px;
-} 
-.swiper-wrapper-thanks {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0;
+    max-width: 1000px;
 }
 .swiper-slide-thanks {
-    background-color: #fff;
-    display: block;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    min-height: 160px;
+    position: relative;
     &__link {
-        display: inline-block;
-        margin-bottom: 20px;
-        padding: 10px 20px;
-        &-img {
-            display: block;
-            max-width: 100%;
-            width: 100%;
-        }
-        &-wr {
-
-        }
     }
+    &-inner {
+        position: absolute;
+        top: 55px;
+        left: 35px;
+        &-img {}
+    }
+    &-inner2 {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        &-img {}
+    }
+}
+.swiper-button-prev-thanks {
+    left: -40px;
+    color: #FF3446;
+}
+.swiper-button-next-thanks {
+    right: -40px;
+    color: #FF3446;
 }
 
 
