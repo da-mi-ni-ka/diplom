@@ -173,10 +173,14 @@ p {
 } 
 .swiper-wrapper {}
 .swiper-slide {
+&:active,
+&:hover {
+    border: 2px solid rgba(255, 52, 70, 0.4);
+}
     &__link {
         display: block;
         position: relative;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         &-img {
             display: block;
             max-width: 100%;
