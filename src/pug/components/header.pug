@@ -28,9 +28,11 @@
                     .contacts__message 
                         p.contacts__message-p info@q-graver.ru
                         a(href="#").contacts__message-link
-                            img(src="./assets/imgs/call.svg", alt="call").contacts__message-img
+                            svg.contacts__message-img
+                                use(xlink:href="./assets/imgs/sprite.svg#call")
                         a(href="#").contacts__message-link
-                            img(src="./assets/imgs/click.svg", alt="click").contacts__message-img
+                            svg.contacts__message-img
+                                use(xlink:href="./assets/imgs/sprite.svg#click")
                     .contacts__call 
                         p.contacts__call-p +7 (495) 632-11-16
                         a(href="#").contacts__call-link Заказать звонок 

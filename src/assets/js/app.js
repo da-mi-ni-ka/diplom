@@ -80,15 +80,13 @@ $(function () {
     const swiper5 = new Swiper('.swiper-container-works', {
       loop: true,
       slidesPerView: 4,
-      slidesPerColumn: 2,
-      slidesPerColumnFill: 'row',
-      slidesPerGroup: 1,
       spaceBetween: 10,
+      grabCursor: true,
     
 
       navigation: {
-        nextEl: '.swiper-button-next.btn-works-r',
-        prevEl: '.swiper-button-prev.btn-works-l',
+        nextEl: '.swiper-button-next-works',
+        prevEl: '.swiper-button-prev-works',
       },
     });
 
