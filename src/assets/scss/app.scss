@@ -694,7 +694,11 @@ p {
     margin-bottom: 5px;
     display: block;
     position: relative;
-
+    border: 2px solid rgba(0, 0, 0, 0);
+&:active,
+&:hover {
+    border: 2px solid rgba(255, 52, 70, 0.4);
+}
     &__title {
         background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.0));
         position: absolute;
@@ -905,18 +909,16 @@ p {
     width: 1048px;
 } 
 .swiper-wrapper-works {
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 30px;
 }
 .swiper-slide-works {
     &__link {
-        display: inline-block;
+        display: block;
         position: relative;
-        margin-bottom: 20px;
         &-img {
             display: block;
             max-width: 100%;
-            // width: 100%;
+            width: 100%;
         }
     }
     &__p {
